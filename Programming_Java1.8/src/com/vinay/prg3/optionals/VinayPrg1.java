@@ -27,9 +27,9 @@ import java.util.Optional;
  * order to deal with it properly.
  * 
  * Please note that Optional is not meant to be used in these below contexts, as
- * possibly it won�t buy us anything:
+ * possibly it won’t buy us anything:
  * 
- * (a) in the domain model layer (it�s not serializable), (b) in DTOs (it�s not
+ * (a) in the domain model layer (it’s not serializable), (b) in DTOs (it’s not
  * serializable) (c) in input parameters of methods (c) in constructor
  * parameters
  * 
@@ -48,7 +48,7 @@ public class VinayPrg1 {
 		// Case 1 :: Optional.ofNullable
 		// It is used to create an Optional object that may hold a
 		// null value. If parameter is null, the resulting Optional object would
-		// be empty (remember that value is absent; don�t read it null).
+		// be empty (remember that value is absent; don’t read it null).
 		Optional<Integer> couldBeEmpty1 = Optional.ofNullable(getData());
 		// couldBeEmpty1.isPresent() // returns true/false
 		if (couldBeEmpty1.isPresent()) {
