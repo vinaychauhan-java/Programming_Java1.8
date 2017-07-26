@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 public class VinayPrg3SupplierFI {
 
 	public static void main(String[] args) {
-		List<String> names = new ArrayList<String>();
+		List<String> names = new ArrayList<>();  // Usage of Type Inference
 		names.add("Vipin Chauhan");
 		names.add("Vinay Chauhan");
 		names.add("Ananya Chauhan");

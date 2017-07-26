@@ -5,13 +5,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer; // Consumer is an Interface
 
-/**
- * 
- * Reference URL :
- * http://www.journaldev.com/2389/java-8-features-for-developers-
- * lambdas-functional-interface-stream-and-time-api#functional-interface-lambdas
- *
- */
 public class VinayPrg1 {
 
 	public static void main(String[] args) {

@@ -49,7 +49,8 @@ interface InterfaceA {
 
 @FunctionalInterface
 interface InterfaceB {
-
+	// Note :- only public, abstract, default, static and strictfp are permitted
+	// in an Interface
 	void getData2();
 
 	default void log(String str) {
@@ -96,3 +97,20 @@ public class VinayPrg1 {
 		InterfaceA.print("Vipin & Vinay");
 	}
 }
+
+/**
+ * Points to remember:- 
+ * A) Only one abstract method is allowed in any functional interface. Second
+ * abstract method is not not permitted in a functional interface. If we
+ * remove @FunctionInterface annotation then we are allowed to add another
+ * abstract method, but it will make the interface non-functional interface.
+ * 
+ * B) A functional interface is valid even if the @FunctionalInterface
+ * annotation would be omitted. It is only for informing the compiler to enforce
+ * single abstract method inside interface.
+ * 
+ * C) Conceptually, a functional interface has exactly one abstract method.
+ * Since default methods have an implementation, they are not abstract. Since
+ * default methods are not abstract you’re free to add default methods to your
+ * functional interface as many as you like.
+ */
